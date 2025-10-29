@@ -35,12 +35,14 @@ if "total_cost" not in cost.columns:
         cost["total_cost"] = 0
 
 
-tab1, tab2, tab3, tab4, tab5 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
     "📊 Overview",
     "🩸 Cost Leakage Analyzer",
     "⚙️ Optimization Insights",
     "🚨 Alerts & Recommendations",
-    "📈 Predictive Cost Trends"
+    "📈 Predictive Cost Trends",
+    "🛣️ Route Performance Summary"
+    
 ])
 
 with tab1:
@@ -263,7 +265,6 @@ with tab5:
                   title="Predicted Cost Trend (Linear Forecast)")
     st.plotly_chart(fig, use_container_width=True)
 
-tab6 = st.tabs(["🛣️ Route Performance Summary"])[0]
 
 with tab6:
     st.header("🛣️ Route Performance Summary")
