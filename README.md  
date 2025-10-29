@@ -1,0 +1,59 @@
+#  NexGen Logistics – Cost Intelligence Platform
+
+### Project Overview
+The **Cost Intelligence Platform** is a Streamlit-based analytics dashboard designed for **NexGen Logistics Pvt. Ltd.**  
+It identifies **cost leakages**, **inefficiencies**, and **optimization opportunities** across logistics operations — covering routes, vehicles, warehouses, and deliveries.
+
+---
+
+##  Problem Statement
+NexGen Logistics faced:
+- Rising operational costs  
+- Delivery inefficiencies  
+- Low visibility into route-level profitability  
+
+The objective was to create a **data-driven platform** to:
+- Detect cost leakage sources  
+- Improve fleet & route efficiency  
+- Forecast cost trends  
+- Support management decision-making
+
+---
+
+## Features
+| Module | Description |
+|--------|--------------|
+|  **Overview** | Summary KPIs + cost distribution by component |
+| **Cost Leakage Analyzer** | Detects top costly routes and vehicles |
+| **Optimization Insights** | Identifies potential cost savings |
+| **Alerts & Recommendations** | Automated operational suggestions |
+| **Predictive Cost Trends** | Forecasts cost trends using regression |
+| **Route Performance Summary** | Evaluates best & worst routes by cost and delay |
+
+---
+
+## Tech Stack
+- **Python**
+- **Streamlit**
+- **Plotly** (for interactive visualizations)
+- **Pandas / NumPy**
+- **scikit-learn (Linear Regression for forecasting)**
+
+---
+
+## Datasets Used
+1. `cost_breakdown.csv` – individual cost components (fuel, labor, etc.)  
+2. `orders.csv` – order-level details  
+3. `routes_distance.csv` – route and distance information  
+4. `vehicle_fleet.csv` – vehicle-level costs and utilization  
+5. `warehouse_inventory.csv` – warehouse handling costs  
+6. `customer_feedback.csv` – satisfaction and penalty data  
+
+---
+
+## How to Run
+
+1. Clone or extract the project files  
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
